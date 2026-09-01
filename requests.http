@@ -1,0 +1,29 @@
+### Prueba rápida de los endpoints (usar con la extensión REST Client de VS Code / Rider)
+@host = http://localhost:5080
+
+### Listar clientes (mira el campo orderCount)
+GET {{host}}/api/customers
+
+### Listar todos los pedidos (mira el campo customerName)
+GET {{host}}/api/orders
+
+### Obtener un pedido por id
+GET {{host}}/api/orders/1
+
+### Crear un pedido
+POST {{host}}/api/orders
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "totalAmount": 42.00
+}
+
+### Cambiar el estado de un pedido
+### Estados: 0=Pending, 1=Confirmed, 2=Shipped, 3=Cancelled
+PUT {{host}}/api/orders/1/status
+Content-Type: application/json
+
+{
+  "newStatus": 1
+}
