@@ -52,6 +52,3 @@ Thumbs.db
 
 # Documento SOLO para el entrevistador: NO debe compartirse con el candidato.
 GUIA_ENTREVISTADOR.md
-
-# Tests de verificacion SOLO para el entrevistador: revelan los bugs. NO compartir.
-tests/

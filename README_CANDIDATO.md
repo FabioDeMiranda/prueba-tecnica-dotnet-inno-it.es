@@ -74,6 +74,17 @@ http://localhost:5080/swagger
 También tienes un fichero [`requests.http`](requests.http) con peticiones de ejemplo si
 prefieres probar desde el editor.
 
+### Tests
+
+Hay una batería de tests que describe el comportamiento esperado. **Varios fallan a
+propósito**: úsalos como guía de qué no funciona todavía y para comprobar tus arreglos.
+
+```bash
+dotnet test
+```
+
+No necesitas que pasen todos; son una ayuda, no el objetivo.
+
 ---
 
 ## Tu tarea
