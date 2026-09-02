@@ -1,7 +1,7 @@
-# Prueba técnica — API de Pedidos (.NET 8)
+# Prueba técnica — API de Pedidos (.NET 10)
 
 Bienvenido/a. Esto es una pequeña API REST de gestión de **pedidos** y **clientes**,
-construida con .NET 8 y arquitectura por capas. Forma parte del día a día del proyecto:
+construida con .NET 10 y arquitectura por capas. Forma parte del día a día del proyecto:
 un sistema que estamos migrando desde un monolito hacia servicios más pequeños.
 
 > **No es un examen de memoria.** No pasa nada si no recuerdas la sintaxis exacta de una
@@ -51,7 +51,7 @@ infraestructura externa, pero se comporta como una base de datos relacional de v
 
 ## Requisitos
 
-- **.NET 8 SDK** (`dotnet --version` debería devolver `8.x`).
+- **.NET 10 SDK** (`dotnet --version` debería devolver `10.x`).
 - El editor que prefieras: Visual Studio, VS Code o Rider.
 - No necesitas Docker ni ninguna base de datos instalada.
 
