@@ -16,6 +16,7 @@ public class CustomerRepository : ICustomerRepository
     public async Task<IReadOnlyList<Customer>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         return await _context.Customers
+            .Include(i => i.Orders)
             .AsNoTracking()
             .ToListAsync(cancellationToken);
     }

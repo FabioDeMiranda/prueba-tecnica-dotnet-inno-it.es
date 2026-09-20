@@ -21,6 +21,8 @@ public class UpdateOrderStatusCommandHandler : IRequestHandler<UpdateOrderStatus
         }
 
         order.Status = request.NewStatus;
+        
+        await _orderRepository.SaveChangesAsync(cancellationToken);
 
         return true;
     }
